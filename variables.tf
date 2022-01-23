@@ -4,7 +4,7 @@ variable "name" {
   default     = null
 }
 
-variable "create_namespace" {
+variable "kubernetes_create_namespace" {
   description = "Create the namespace for the instance if it doesn't yet exist"
   type        = bool
   default     = true
