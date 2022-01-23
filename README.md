@@ -5,14 +5,14 @@
 
 | Name | Version |
 |------|---------|
-| helm | n/a |
+| helm | >=2.4.1 |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:-----:|
 | agent\_pool | AgentPool of the cluster | `string` | n/a | yes |
-| create\_namespace | Create the namespace for the instance if it doesn't yet exist | `bool` | `true` | no |
+| kubernetes\_create\_namespace | Create the namespace for the instance if it doesn't yet exist | `bool` | `true` | no |
 | name | name of helm installation (defaults to elasticsearch-<name> | `string` | n/a | yes |
 | namespace | Kubernetes namespace in which to create instance | `string` | `"default"` | no |
 
