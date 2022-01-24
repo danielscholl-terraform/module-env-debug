@@ -3,7 +3,7 @@ resource "helm_release" "application" {
   chart = "${path.module}/chart"
 
   namespace        = var.namespace
-  create_namespace = var.create_namespace
+  create_namespace = var.kubernetes_create_namespace
 
   values = [<<-EOT
   agentPool: ${var.agent_pool}
